@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: var(--text-color);
+    --main-color: rgb(30, 30, 30);
+    --text-light-color: rgb(248, 245, 245);
+    --line-color: rgb(150, 150, 150); 
+    --text-description-color: rgb(95, 95, 95);
+
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    min-width: 375px;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+.header__info{
+    background-color: var(--main-color);
+    color: var(--text-light-color);
+    padding: 25px 20px;
+}
+.header__info-top-line{
+    display: none;
+}
+.header__info-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+.header__info-name span{
+    font-weight: 300;
+}
+.header__info-line{
+    height: 1px;
+    width: 70%;
+    position: relative;
+    background: var(--line-color);
+    border: none;
+    margin: 20px 0; 
+}
+.header__info-level{
+    font-family: 'Aboreto', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+}
+.header__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: relative;
+}
+.header__social{
+    display: flex;
+    margin-top: 60px;
+}
+.header__social-links{
+    display: block;
+    background-color: var(--text-light-color);
+    margin: 10px;
+    /* border: 1px solid var(--text-light-color); */
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.header__social-link{
+    width: 35px;
+    height: 35px;
+}
+.fb{
+    padding: 3.2px;
+}
+.inst{
+    padding: 3.5px;
+}
+
+.about-me,
+.contact,
+.tech-skills,
+.soft-skills,
+.languages,
+.pet-projects,
+.courses,
+.career,
+.education{
+    padding: 30px 20px;
+    border-bottom: 0.5px solid var(--text-description-color);
+}
+.about-me__title,
+.contact__title,
+.tech-skills__title,
+.soft-skills__title,
+.languages__title,
+.pet-projects__title,
+.courses__title,
+.career__title,
+.education__title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about-me__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.contact__item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.contact__item-link{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    margin: 5px 0 10px 0;
+}
+.contact__item-link:hover{
+    text-decoration: underline;
+}
+.tech-skills__list,
+.soft-skills__list{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    padding-left: 19px;
+}
+.tech-skills__item,
+.soft-skills__item,
+.pet-projects__list-item{
+    padding-bottom: 6px;
+}
+.languages__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.languages__text span{
+    font-weight: 300;
+}
+.pet-projects__list{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    padding-left: 19px;
+}
+.pet-projects__list-item a{
+    font-weight: 300;
+    color: var(--text-description-color);
+}
+.pet-projects__list-item a:hover{
+    text-decoration: underline;
+}
+.courses__name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.courses__academy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    margin-top: 5px;
+}
+.courses__certificate{
+    display: block;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.courses__certificate:hover{
+    text-decoration: underline;
+}
+.career__job{
+    padding-bottom: 20px;
+}
+.career__job-company{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.career__job-period{
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.career__job-duty{
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    padding-left: 19px;
+}
+.education__info{
+    padding-bottom: 20px;
+}
+.education__info-university{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    margin-bottom: 5px;
+}
+.education__info-degree{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+.education__info-degree:hover{
+    text-decoration: underline;
+}
+.education__info-graduation{
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+}
+
+@media (min-width: 768px){
+    .header {
+        flex-direction: row;
+    }
+    .header__info {
+        width: 50%;
+    }
+    .header__info-top-line{
+        display: block;
+        height: 1px;
+        width: 57%;
+        position: relative;
+        background: var(--line-color);
+        border: none;
+        transform: rotate(90deg);
+        left: -24%;
+    }
+    .header__info-name {
+        margin-top: 120px;
+        margin-left: 10px;
+        font-size: 35px;
+    }
+    .header__info-line{
+        display: none;
+    }
+    .header__info-level{
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    .header__image-container {
+        width: 50%;
+        /* max-width: 50%;
+        max-height: 50%;
+        padding-right: 25px; */
+    }
+    .header__image-container div{
+        height: 20%;
+    }
+    .header__image {
+        
+    }
+    .container{
+        display: flex;
+        margin-top: 100px;
+    }
+    .left-block{
+        width: 40%;
+    }
+    .right-block{
+        width: 60%;
+    }
+}
+/* @media (min-width: 830px) {
+    .header__info {
+        height: 55%;
+    }
+    .header__info-name{
+        font-size: 38px;
+        margin-top: 140px;
+    }
+}
+@media (min-width: 900px) {
+    .header__info {
+        height: 60%;
+    }
+    .header__info-name{
+        font-size: 41px;
+        margin-top: 155px;
+    }
+}
+@media (min-width: 985px) {
+    .header__info {
+        height: 65%;
+    }
+    .header__info-name{
+        margin-top: 180px;
+    }
+}
+@media (min-width: 1018px) {
+    .header__info {
+        height: 70%;
+    }
+    .header__info-name{
+        font-size: 45px;
+        margin-top: 197px;
+    }
+    .header__info-level{
+        font-size: 19px;
+    }
+}
+@media (min-width: 1105px) {
+    .header__info {
+        height: 75%;
+    }
+    .header__info-name{
+        font-size: 45px;
+        margin-top: 215px;
+    }
+    .header__info-level{
+        font-size: 22px;
+    }
+  
+} */
