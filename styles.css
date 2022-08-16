@@ -24,7 +24,7 @@ body {
 a {
     text-decoration: none;
 }
-.container {
+.cv-wrapper {
     max-width: 1200px;
     margin: auto;
 }
@@ -83,18 +83,22 @@ a {
     display: block;
     background-color: var(--text-light-color);
     margin: 10px;
-    /* border: 1px solid var(--text-light-color); */
     border-radius: 50%;
     opacity: 0.9;
+}
+.header__social-links:hover{
+    opacity: 1;
+    background-color: white;
+    box-shadow: 0px 0px 8px white;
 }
 .header__social-link{
     width: 35px;
     height: 35px;
 }
-.fb{
+.facebook{
     padding: 3.2px;
 }
-.inst{
+.instagram{
     padding: 3.5px;
 }
 
@@ -123,7 +127,7 @@ a {
     color: var(--main-color);
     font-size: 30px;
     font-weight: 500;
-    line-height: 34px;
+    line-height: 47px;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
@@ -291,6 +295,9 @@ a {
 }
 
 @media (min-width: 768px){
+    .cv-wrapper{
+        box-shadow: 0px 0px 40px grey;
+    }
     .header {
         flex-direction: row;
     }
@@ -308,8 +315,8 @@ a {
         left: -24%;
     }
     .header__info-name {
-        margin-top: 120px;
-        margin-left: 10px;
+        margin-top: 37%;
+        margin-left: 4%;
         font-size: 35px;
     }
     .header__info-line{
@@ -317,80 +324,58 @@ a {
     }
     .header__info-level{
         margin-top: 15px;
-        margin-left: 10px;
+        margin-left: 4%;
         font-size: 17px;
     }
     .header__image-container {
         width: 50%;
-        /* max-width: 50%;
-        max-height: 50%;
-        padding-right: 25px; */
     }
     .header__image-container div{
         height: 20%;
     }
-    .header__image {
-        
+    .header__social{
+        margin-top: 20%;
+        margin-left: 4%;
     }
     .container{
         display: flex;
-        margin-top: 100px;
+        margin-top: 13%;
     }
     .left-block{
-        width: 40%;
+        width: 45%;
+        padding-right: 45px;
     }
     .right-block{
-        width: 60%;
+        width: 55%;
+        padding-left: 32px;
+    }
+    .languages{
+        border: none;
+    }
+    .right-block section{
+        padding: 30px 0 30px 20px;
+        border: none;
+    }
+    .pet-projects__title,
+    .courses__title,
+    .career__title,
+    .education__title{
+        border-bottom: 0.5px solid var(--text-description-color);
     }
 }
-/* @media (min-width: 830px) {
-    .header__info {
-        height: 55%;
-    }
-    .header__info-name{
-        font-size: 38px;
-        margin-top: 140px;
-    }
-}
+
 @media (min-width: 900px) {
-    .header__info {
-        height: 60%;
-    }
     .header__info-name{
         font-size: 41px;
-        margin-top: 155px;
-    }
-}
-@media (min-width: 985px) {
-    .header__info {
-        height: 65%;
-    }
-    .header__info-name{
-        margin-top: 180px;
-    }
-}
-@media (min-width: 1018px) {
-    .header__info {
-        height: 70%;
-    }
-    .header__info-name{
-        font-size: 45px;
-        margin-top: 197px;
-    }
-    .header__info-level{
-        font-size: 19px;
     }
 }
 @media (min-width: 1105px) {
-    .header__info {
-        height: 75%;
-    }
     .header__info-name{
         font-size: 45px;
-        margin-top: 215px;
+        margin-top: 44%;
     }
     .header__info-level{
         font-size: 22px;
     }
   
-} */
+} 
