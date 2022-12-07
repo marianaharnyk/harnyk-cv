@@ -96,9 +96,12 @@ a {
     height: 35px;
 }
 .facebook{
-    padding: 3.2px;
+    padding: 3.5px;
 }
 .instagram{
+    padding: 3.5px;
+}
+.linkedin{
     padding: 3.5px;
 }
 
@@ -108,8 +111,8 @@ a {
 .soft-skills,
 .languages,
 .pet-projects,
-.courses,
 .career,
+.experience,
 .education{
     padding: 30px 20px;
     border-bottom: 0.5px solid var(--text-description-color);
@@ -120,8 +123,8 @@ a {
 .soft-skills__title,
 .languages__title,
 .pet-projects__title,
-.courses__title,
 .career__title,
+.experience__title,
 .education__title{
     font-family: 'Poppins', sans-serif;
     color: var(--main-color);
@@ -201,7 +204,7 @@ a {
 .pet-projects__list-item a:hover{
     text-decoration: underline;
 }
-.courses__name{
+.career__name{
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -209,7 +212,8 @@ a {
     letter-spacing: 1.3px;
     color: var(--text-description-color);
 }
-.courses__academy{
+
+.career__company{
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 300;
@@ -218,23 +222,30 @@ a {
     color: var(--text-description-color);
     margin-top: 5px;
 }
-.courses__certificate{
-    display: block;
-    margin-top: 5px;
+.career__certificate{
+    display: inline;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 15px;
     letter-spacing: 1.3px;
-    color: var(--text-description-color);
+    color: var(--text-description-color); 
 }
-.courses__certificate:hover{
+.career__certificate:hover{
     text-decoration: underline;
 }
-.career__job{
+.career__period{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: var(--text-description-color);
+    margin-top: 5px;
+    
+}
+.career__item,
+.experience__job{
     padding-bottom: 20px;
 }
-.career__job-company{
+.experience__job-company{
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -242,7 +253,7 @@ a {
     letter-spacing: 1.3px;
     color: var(--text-description-color);
 }
-.career__job-period{
+.experience__job-period{
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -251,7 +262,7 @@ a {
     letter-spacing: 1.3px;
     color: var(--text-description-color);
 }
-.career__job-duty{
+.experience__job-duty{
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -357,8 +368,8 @@ a {
         border: none;
     }
     .pet-projects__title,
-    .courses__title,
     .career__title,
+    .experience__title,
     .education__title{
         border-bottom: 0.5px solid var(--text-description-color);
     }
